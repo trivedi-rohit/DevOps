@@ -8,11 +8,11 @@ fi
 ```
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________
 # Script to Backup a Directory  
-```
+```bash
 #!/bin/bash
 directory_to_backup="/home/rohit/Desktop/Romo/newScript"      # This directory will be backed up
-backup_location="/home/rohit/Desktop/Romo"   # Here backup will be stored
-current_date=$(date +%d-%m-%Y)               # Date on which the backup was taken
+backup_location="/home/rohit/Desktop/Romo"                    # Here backup will be stored
+current_date=$(date +%d-%m-%Y)                                # Date on which the backup was taken
 
 # Find the next available backup number
 backup_number=1
