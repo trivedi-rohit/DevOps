@@ -65,7 +65,7 @@ else
 fi
 ```
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________
-# Count number of files in a directory till a single file exist or loop will exit
+# Count number of files in a directory till a single file exist else loop will exit
 ```bash
 #!/bin/bash
 
