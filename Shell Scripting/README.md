@@ -26,3 +26,15 @@ tar -czf "$backup_location/backup-$backup_number-$current_date.tar.gz" -C "$(dir
 
 echo "Backup of $directory_to_backup is created successfully on $current_date as backup-$backup_number inside $backup_location."
 ```
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________
+# Check if command exist or not
+```bash
+#!/bin/bash
+read -p "Enter a command to check : " cmd_name
+
+if command  -v $cmd_name &> /dev/null ; then     # used "/dev/null" to avoid getting output of a command to be printed. So dumped in /dev/null.
+	echo "$cmd_name command exist"
+else
+	echo "$cmd_name doesn't exist"
+fi
+```
