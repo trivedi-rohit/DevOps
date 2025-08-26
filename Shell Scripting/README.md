@@ -26,6 +26,32 @@ tar -czf "$backup_location/backup-$backup_number-$current_date.tar.gz" -C "$(dir
 
 echo "Backup of $directory_to_backup is created successfully on $current_date as backup-$backup_number inside $backup_location."
 ```
+# Updated:
+```bash
+#!/bin/bash
+
+directory_to_backup=$1  
+backup_location=$2
+
+# Validate input arguments
+if [ -z "$directory_to_backup" ] || [ -z "$backup_location" ]; then
+    echo "Usage: $0 <directory_to_backup> <backup_location>"
+    exit 1
+fi
+
+# current date
+current_date=$(date +'%Y-%m-%d')
+
+# Backup
+tar -czf "$backup_location/backup-$current_date.tar.gz" -C "$(dirname "$directory_to_backup")" "$(basename "$directory_to_backup")"
+
+echo "Backup of $directory_to_backup is created successfully on $current_date inside $backup_location."
+```
+Now provide desired backup path and backup location to create back of any directory.
+
+Give permission to file => chmod +x UpdateBackupScript.sh
+
+Then, => ./backup.sh /path of directorytobackup /path where to save backup
 _________________________________________________________________________________________________________________________________________________________________________________________________________________________
 # Check if command exist or not
 ```bash
