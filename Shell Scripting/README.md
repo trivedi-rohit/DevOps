@@ -109,5 +109,5 @@ if [ "$MEM_AVAILABLE" -lt 20 ]; then
 	echo "Alert: Low Memory available - ${MEM_AVAILABLE}% at ${TIME_STAMP}" >> $LOG_FILE
 fi
 
-echo "Information : Present CPU Usage is $CPU_USAGE% and available memory is $MEM_AVAILABLE%."
+echo "Information : Present CPU Usage is $CPU_USAGE% and Available Memory is $MEM_AVAILABLE%."
 ```
