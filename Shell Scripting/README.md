@@ -111,3 +111,50 @@ fi
 
 echo "Information : Present CPU Usage is $CPU_USAGE% and Available Memory is $MEM_AVAILABLE%."
 ```
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+# Countdown Timer:
+```
+#!/bin/bash
+
+# Function to convert time to seconds
+convert_to_seconds() {
+    case $1 in
+        "sec" )
+            echo $2
+            ;;
+        "min" )
+            echo $(($2 * 60))
+            ;;
+        "hour" )
+            echo $(($2 * 3600))
+            ;;
+        *)
+            echo "Invalid time unit"; exit 1
+            ;;
+    esac
+}
+
+# get user input
+echo "Enter the time you want to set the timer for:"
+read -p "Time value: " time_value
+read -p "Unit (sec, min, hour): " unit
+
+# Convert to seconds
+total_seconds=$(convert_to_seconds $unit $time_value)
+
+# Display Countdown
+echo "Timer started for $time_value $unit..."
+start_time=$(date +%s)
+end_time=$((start_time + total_seconds))
+
+while [ $(date +%s) -lt $end_time ]; do
+    elapsed=$(( $(date +%s) - start_time ))
+    remaining=$((total_seconds - elapsed))
+    printf "\rElapsed Time: %02d:%02d:%02d  |  Remaining Time: %02d:%02d:%02d" \
+        $(($elapsed / 3600)) $(($elapsed % 3600 / 60)) $(($elapsed % 60)) \
+        $(($remaining / 3600)) $(($remaining % 3600 / 60)) $(($remaining % 60))
+    sleep 1
+done
+
+echo -e "\nTime's up!"
+```
