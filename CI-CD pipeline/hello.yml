@@ -1,0 +1,29 @@
+# Create workflow in Github Actions
+#-------------------------------------------------------------------------
+# Go to Repo and create ".github" folder, then create new folder workflow
+# (RepoName/.github/workflow)
+#*************************************************************************
+# GitHub Actions:
+#	* Runners (servers where jobs run)
+#	* Every job needs a runner
+
+# Runners:
+#	- Github Runners
+#	- Self hosted runners 
+
+--------------------------------------------------------------------------
+
+name: Hello workflow      # workflow name
+
+on: 
+  push:
+    branches: [main]
+
+jobs: 
+  greet:                # name of a job
+    runs-on: ubuntu-latest
+    steps:			
+      - name: Say hello to friend
+        run: echo "Hello Dost" 
+      - name: Say hello to system user
+        run: echo "Hello $USER"
