@@ -21,9 +21,10 @@ on:
 
 jobs: 
   greet:                # name of a job
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest   # trigger
     steps:			
       - name: Say hello to friend
         run: echo "Hello Dost" 
       - name: Say hello to system user
+
         run: echo "Hello $USER"
