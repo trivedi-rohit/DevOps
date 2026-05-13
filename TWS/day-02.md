@@ -7,7 +7,7 @@
     - Systemd/init process PID
     - Systemctl
     - Few commands in Linux.
-### What is Linux and why so famous
+## What is Linux and why so famous
 Linux is an open-source operating system kernel that acts as the core of many Unix-like operating systems. 
 It was first created by Linus Torvalds in 1991 and has grown into one of the most widely used operating systems across the world.
 One of the main reasons behind Linux’s popularity is its open-source nature. 
@@ -17,16 +17,15 @@ One of the main reasons behind Linux’s popularity is its open-source nature.
 - Linux is generally free to use and distribute, helping both individuals and organizations reduce licensing expenses and use their resources more effectively.
 - In addition, Linux is known for its strong security framework. Because it is open source, security issues can be identified and fixed quickly by the global developer community.
 
-### Architecture of Linux
+## Architecture of Linux
 Linux follows a layered architecture, where each layer performs a specific function and communicates with others.
 The main layers are:
-
 1. Hardware Layer
 2. Kernel (Core of Linux)
 3. System Libraries
 4. Shell
 5. User Space / Applications
-
+<img width="425" height="399" alt="Screenshot 2026-05-13 223056" src="https://github.com/user-attachments/assets/0fd3a75a-c01f-417b-8a1b-aaa9625a6858" />
 
 **1. Hardware - The Physical Layer**
 At the bottom of Linux architecture is the hardware. This includes:
@@ -131,10 +130,56 @@ Shell acts as the bridge between User and Kernel.
 This is where all user applications run.
 
 Examples:
-
  - Text editors, Web browsers, Database, DevOps tools, Programming languages, GUI applications
-
 User applications run in non-privileged mode, meaning they cannot directly access hardware. They must go through Kernel for operations.
+
+## Process Architecture in Linux
+Each running program is called a process.
+
+Every process has:
+ - Process ID (PID)
+ - Memory space
+ - Execution state
+ - Priority
+ - File descriptors
+
+Linux process states:
+ - Running
+ - Waiting
+ - Sleeping
+ - Stopped
+ - Zombie
+
+The Kernel scheduler manages all processes efficiently.
+
+## Linux File System Hierarchy
+Linux follows a structured file system.
+
+- / → Root
+- /bin → Essential binaries
+- /etc → Configuration files
+- /home → User directories
+- /var → Logs and variable data
+- /tmp → Temporary files
+- /usr → Applications and libraries
+- /dev → Device files
+- /proc → Process information
+
+Everything is organized logically.
+
+## Device Handling in Linux
+Linux treats devices as files.
+
+Examples:
+ - /dev/sda → Disk
+ - /dev/tty → Terminal
+ - /dev/null → Null device
+
+This design simplifies device interaction.
+## List of few important command in Linux:
+
+<img width="528" height="984" alt="image" src="https://github.com/user-attachments/assets/44c7c8ce-0292-4b22-bb9f-a095d172c84b" />
+
 
 
 
