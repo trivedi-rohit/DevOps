@@ -1,5 +1,5 @@
 # Day-03 Task
-## create a cheat sheet of commands focused on:
+## What I learned today & cheat sheet of commands:
     - Process management
     - File system
     - Networking troubleshooting
