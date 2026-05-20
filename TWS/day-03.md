@@ -69,4 +69,9 @@ In Linux, a daemon process is a background process that runs without any user in
 Daemon processes do not directly interact with users and do not have a controlling terminal. They are typically started by the init process (PID 1) during system startup, and their settings are managed by configuration files and tools that run at the system level.
 Daemon processes typically function without a terminal or display because they are made to run in the background. System-level utilities like systemctl or service can be used to start, stop, and restart them. The ps command or the top command can be used to check on their status.
 The httpd daemon, which manages requests to the web server, the sshd daemon, which manages SSH connections, and the cron daemon, which manages scheduled tasks are a few examples of daemon processes.
-Daemon processes are crucial for maintaining a Linux system's smooth operation because they offer crucial services and carry out background tasks required for the system to operate properly. 
+Daemon processes are crucial for maintaining a Linux system's smooth operation because they offer crucial services and carry out background tasks required for the system to operate properly.
+
+## Process Command:
+1. ps
+- The ps command is used to display details about the processes that are currently active. It can show details like the process ID, the status of the process, the command that launched the process, and the user who is the process owner.
+2. top & htop 
