@@ -72,6 +72,25 @@ The httpd daemon, which manages requests to the web server, the sshd daemon, whi
 Daemon processes are crucial for maintaining a Linux system's smooth operation because they offer crucial services and carry out background tasks required for the system to operate properly.
 
 ## Process Command:
-1. ps
-- The ps command is used to display details about the processes that are currently active. It can show details like the process ID, the status of the process, the command that launched the process, and the user who is the process owner.
-2. top & htop 
+1. **ps**
+ - The ps command is used to display details about the processes that are currently active. It can show details like the process ID, the status of the process, the command that launched the process, and the user who is the process owner.
+2. **top & htop** 
+ - The top & htop is a real-time process monitoring tool that shows details about the processes that are currently active on the system, such as their process ID, status, CPU usage, and memory usage.
+3. **pstree**
+ - The pstree command displays the parent-child relationship between processes and the system's process hierarchy. It gives the process tree a tree-like representation and makes it possible to see the connections between the processes.
+4. **kill/kill -l**
+ - This command can be used to stop or terminate a process by sending it a signal. The signal's name or number can be used to identify it.
+5. **pgrep**
+ - The pgrep is a command that finds and displays the process IDs of processes that match a given pattern. It can be used to discover a running program's process ID.
+6. **nice & renice*
+ - Use to alter the priority of a process.
+
+
+
+
+
+
+
+
+
+
