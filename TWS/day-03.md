@@ -127,9 +127,9 @@ These files represent hardware devices and handle input/output (I/O) operations.
 7. Delete a file -> rm
 ### Creating Links on Files
 Linux provides link mechanism to access a file from another location. You can say these links are alternate names for the existing files. These links could be symbolic links or hard links.
-- Following is the command to create hard link on an existing file:
+>> Following is the command to create hard link on an existing file:
  - **ln filename hardlink**
-- Following is the command to create a symbolic link on filename:
+>> Following is the command to create a symbolic link on filename:
  - **ln -s filename symlink**
 
 
