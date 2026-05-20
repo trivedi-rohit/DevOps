@@ -131,9 +131,10 @@ Linux provides link mechanism to access a file from another location. You can sa
  - **ln filename hardlink**
 >> Following is the command to create a symbolic link on filename:
  - **ln -s filename symlink**
+____________________________________________________________________________________________________________________________________________________________
 
-
-
+## Network troubleshooting commands
+Below are the commands used for file creation & mangement and network troubleshooting:
 
 
 
