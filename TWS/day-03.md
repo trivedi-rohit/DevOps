@@ -87,6 +87,50 @@ Daemon processes are crucial for maintaining a Linux system's smooth operation b
 ____________________________________________________________________________________________________________________________________________________________
 
 ## File Management in Linux
+File management in Linux involves handling files and directories through various operations such as creation, modification, organization and access control within the filesystem.
+
+ - Linux treats everything as a file, including devices and system configurations.
+ - Ensures efficient data organization and accessibility.
+ - Common commands include cp, mv, rm, ls and cat.
+
+Linux categorizes files into three main types, each serving a specific purpose in the system:
+a. General Files
+b. Directory Files
+c. Device Files
+
+a. **General Files**
+These are the most common file types that store user data such as text files, images, and binaries.
+b. **Directories**
+These act as containers that organize files and other directories hierarchically.
+
+ - Similar to folders in Windows.
+ - Store lists of file names and their related metadata.
+Important directories include:
+
+ - /: Root directory (base of the system)
+ - /home/:User home directories
+ - /bin/: Essential user binaries
+ - /boot/: Static boot files
+c. Device Files
+These files represent hardware devices and handle input/output (I/O) operations.
+
+ - Used to interact with physical devices like printers, disks, or terminals.
+ - Found mostly in the /dev/ directory.
+ - Allow the operating system to treat hardware as if it were a regular file
+### Commonly used commands for file mangement:
+1. List fist -> ls /ls -lah
+2. Creating Files -> touch
+3. Edit a file -> vi, nano
+4. Display file content -> cat, less, more
+5. Copy a file -> cp
+6. Move a file or rename a file -> mv
+7. Delete a file -> rm
+### Creating Links on Files
+Linux provides link mechanism to access a file from another location. You can say these links are alternate names for the existing files. These links could be symbolic links or hard links.
+- Following is the command to create hard link on an existing file:
+ - **ln filename hardlink**
+- Following is the command to create a symbolic link on filename:
+ - **ln -s filename symlink**
 
 
 
