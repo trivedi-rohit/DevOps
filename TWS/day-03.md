@@ -82,8 +82,11 @@ Daemon processes are crucial for maintaining a Linux system's smooth operation b
  - This command can be used to stop or terminate a process by sending it a signal. The signal's name or number can be used to identify it.
 5. **pgrep**
  - The pgrep is a command that finds and displays the process IDs of processes that match a given pattern. It can be used to discover a running program's process ID.
-6. **nice & renice*
+6. **nice & renice**
  - Use to alter the priority of a process.
+____________________________________________________________________________________________________________________________________________________________
+
+## File Management in Linux
 
 
 
