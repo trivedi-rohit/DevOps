@@ -135,10 +135,5 @@ ________________________________________________________________________________
 
 ## Network troubleshooting commands
 Below are the commands used for file creation & mangement and network troubleshooting:
-
-
-
-
-
-
+<img width="918" height="2254" alt="image" src="https://github.com/user-attachments/assets/3825212e-7d9f-4250-ad54-2290f9520a31" />
 
