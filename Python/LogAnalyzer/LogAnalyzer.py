@@ -14,18 +14,19 @@ class LogAnalyzer:
             return file.readlines()
 
 
-    def print_log(self, counts):
-        print("Log counts are:")
-        for level, count in counts.items():
-            print(f"{level}: {count}")
-        return counts
-
-
     def write_json_file(self, counts):
         # pdb.set_trace()
         with open(self.output_file,"w") as json_file:
             json.dump(counts, json_file, indent=4)
         return counts
+        
+        
+    def print_log(self, counts):
+        print("Log counts are:")
+        for level, count in counts.items():
+            print(f"{level}: {count}")
+        return counts
+        
 
     def analyze_logs(self):
     
