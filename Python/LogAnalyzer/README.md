@@ -1,9 +1,3 @@
-Here's a polished `README.md` suitable for a GitHub repository.
-
-# Log Analyzer
-
-Here's a more detailed and professional **Log Analyzer** section that you can place near the top of your `README.md`.
-
 # Log Analyzer
 
 The **Log Analyzer** is a lightweight Python application designed to automate the analysis of application log files by identifying and counting log messages based on their severity level. Instead of manually scanning potentially thousands of log entries, this tool processes each log file line by line, categorizes messages into predefined log levels (`INFO`, `WARNING`, and `ERROR`), and generates a structured JSON report containing the total count for each category.
