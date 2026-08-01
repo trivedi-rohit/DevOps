@@ -1,0 +1,9 @@
+FROM eclipse-temurin:17-jdk-jammy
+
+WORKDIR /app
+
+COPY src /app/src
+
+RUN javac -d . src/todolist/ToDoList.java
+
+CMD ["java", "todolist.ToDoList"]
