@@ -1,0 +1,25 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: flask-app-deployment
+  namespace: flask-app
+  labels:
+    app: flask-app-label
+
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: flask-app-label  
+  template:
+    metadata:
+      labels:
+        app: flask-app-label         
+    spec:
+      containers:
+      - name: flask-app
+        image: trivedirohit/mini-flask-app:latest
+        ports:
+        - containerPort: 80     
+
